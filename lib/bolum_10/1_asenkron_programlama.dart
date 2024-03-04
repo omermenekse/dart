@@ -14,7 +14,7 @@ void main(List<String> args) {
 //bu metod asenkron çalışma için
 void uzunSurenIslem() {
   print("çocuk ekmek almak için evden çıkar");
-  Future.delayed(Duration(seconds: 10), () {
+  Future.delayed(Duration(seconds: 5), () {
     print("çocuk ekmekle eve girer");
   });
 }
