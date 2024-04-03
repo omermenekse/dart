@@ -13,6 +13,7 @@ int ucSayiyiTopla(
     required int ikinci,
     required int ucuncu}) {
   return ilk + ikinci + ucuncu;
+  // değerlerin başına required yazdığımızda bu değerlere bir değer atamasının yazpılması zorunludur demiş oluyoruz.
 }
 
 main(List<String> args) {
