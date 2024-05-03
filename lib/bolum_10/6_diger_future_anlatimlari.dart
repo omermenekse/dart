@@ -27,11 +27,15 @@ void main(List<String> args) async {
 
 //eğer haat varsa
   // toplam.then((int toplam) => print(toplam)).catchError((hata) => print(hata));
-
-//await olarak tanımlarsak main metod async olmak zorundadır.
-  int forSonuc = await toplam;
-  print("*********** $forSonuc");
+  try {
+    //await olarak tanımlarsak main metod async olmak zorundadır.
+    int forSonuc = await toplam;
+    print("*********** $forSonuc");
 //awaitlerle çalıştığımızda hatalar için try catchler kullanılmalıdır.
+//
+  } catch (e) {
+    print(e);
+  }
 
 //burada value olarak belirlediğimiz değeri geriye doğru döndürmektedir.
 //mock data için kullanılabilir
